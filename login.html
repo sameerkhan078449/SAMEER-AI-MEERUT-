@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - SAMEER AI MEERUT</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .login-box {
+      margin: 100px auto;
+      padding: 30px;
+      background-color: #222;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00ffcc;
+      width: 300px;
+      text-align: center;
+    }
+    .login-box input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background: #00ffcc;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login to SAMEER AI</h2>
+    <input type="email" placeholder="Enter Gmail ID" id="email" required />
+    <input type="password" placeholder="Enter Password" id="password" required />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <script>
+    function login() {
+      const email = document.getElementById('email').value;
+      if (email === 'skhan276833@gmail.com') {
+        alert("✅ Welcome Owner - Redirecting...");
+        window.location.href = "index.html";
+      } else {
+        alert("❌ Access Denied. Only owner allowed.");
+      }
+    }
+  </script>
+</body>
+</html>

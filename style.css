@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #111, #1a1a1a);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #ff3c3c, #ff9900, #00ffcc);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shine 3s infinite;
+}
+
+header .subtext {
+  margin-top: 5px;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+.chatbox {
+  background-color: #222;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+#chat-log {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #444;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #111;
+}
+
+.input-area {
+  display: flex;
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px 0 0 6px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #00ffcc;
+  color: #000;
+  font-weight: bold;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #00ccaa;
+}
+
+@keyframes shine {
+  0% { text-shadow: 0 0 5px #ff3c3c; }
+  50% { text-shadow: 0 0 15px #00ffcc; }
+  100% { text-shadow: 0 0 5px #ff9900; }
+}
